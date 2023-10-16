@@ -15,10 +15,36 @@ This is a Group Assignment for 4 people per Group.
   
 Swap the Pairs every other day, and make sure to work with every single team member of your team!
 
-DO NOT
-- Work alone, at your own pace! - You need to learn to communicate and discuss. It's the best way of improving code quality and team quality!
-- Stick with the same team members every day! - You should get to know each other and learn, whom it is easier to work with, learn to work with people that might not be so easy to work with and give each other feedback and the chance to improve!
-- Commit when everything is perfect! - That's impossible to collaborate with, due to Merge Conflicts!
+❌ Work alone, at your own pace!\
+✅ Learn to communicate and discuss. It's the best way of improving code quality and team quality!
+
+❌ Stick with the same team members every day!\
+✅ Get to know each other and learn, whom it is easier to work with, learn to work with people that might not be so easy to work with and give each other feedback and the chance to improve!
+
+❌ Commit after days, when everything is perfect!\
+✅ Commit regularly, work iteratively (Get parts of a feature working, then improve)
+
+### A Few more Tips
+Don't work on the same Scenes, Prefabs or Scripts at the same time
+- Create several smaller Scripts
+- Create several smaller Prefabs
+- Communicate who's working on what
+
+Use Unity's Input Manager for Input
+- Configure the Input and use `Input.GetAxis` and `Input.GetButton(Down/Up)`
+
+Most Game Mechanics can be implemented through a Combination of:
+- Physics: RigidBody, Collider, Trigger
+- Unity Event Methods: Start, Update, OnCollisionEnter, OnTriggerEnter, FixedUpdate
+- GameObjects: Instantiate, Destroy, SetActive
+- Components: AddComponent, Destroy
+- Scenes: LoadScene
+
+Don't Google for solutions right away
+- Companies hire Problem-Solvers
+- Googling is a good and important tool as a back-up when stuck
+- But you wouldn't Google the Solution to a Sudoku before trying to solve it yourself first, would you?
+- Exception: MiniMap, Traffic, NPCs
 
 ## Basic Requirements:
 A build of the Game is uploaded to [itch.io](https://itch.io)
@@ -30,6 +56,8 @@ At least 100 Points have been achieved.
 
 ## Excellent Requirements:
 At least 140 Points have been achieved.
+
+## Feature List
 
 | Component | Feature | Score |
 |-----------|---------|-------|
@@ -52,7 +80,6 @@ At least 140 Points have been achieved.
 |UI| Player's Health can be seen | 5 |
 |UI| Player's Currency can be seen | 5 |
 |UI| Player's Score can be seen | 5 |
-|UI| BONUS: Minimap can be seen* | 0 |
 |UI| Player's equipped Item can be seen | 5 |
 |UI| Player's Item's interactions until reload/recharge can be seen | 5 |
 |Quest| Player can interact with a Questgiver-Object to receive quest | 5 |
@@ -61,21 +88,19 @@ At least 140 Points have been achieved.
 |Item| Player can switch Equipped Items between Hands, Item1 and Item2 | 5 |
 |Item| Player can utilize equipped items to interact with Environment and/or Vehicles | 5 |
 |Item| Items need to reload/recharge | 5 |
-|Environment| There is houses | 5 |
-|Environment| There is streets | 5 |
-|Environment| BONUS: Traffic* | 0 |
-|Environment| BONUS: Pedestrians* | 0 |
+|Environment| There are buildings | 5 |
+|Environment| There are paths/roads/streets | 5 |
 |Effect| Effect exists that has an impact on the player while they are standing in the Effect | 5 |
 |Effect| Effect is spawned by destroyed vehicles | 5 |
 |Effect| Effect extinguishes after a while | 5 |
-|Heart| Heart Powerups exist that heal the Player by a certain amount when they collect them | 5 |
+|Heal| Heal Powerups exist that heal the Player by a certain amount when collected | 5 |
 |Hazard| Hazard exists that makes the Player lose the game if touched | 5 |
 |GameOver| A Text is displayed. The player respawns after a few seconds. They lose half of their currency. | 5 |
 |SavePoint| SavePoint-Powerups exist that save the Player's Progress if they are not on a quest right now. When loading, the player's Health and Currency is loaded and they spawn at the SavePoint that they touched last. | 5 |
 | Total: | | 175 |
 -------------------------------
 
-## Details:
+## Bonus:
 
 ### BONUS: Traffic
 There should be a continuous perception of vehicles navigating over the Map. The vehicles can run on pre-scripted paths, but they should give some impression of randomness/unpredictability.
@@ -85,3 +110,6 @@ There should be a continuous perception of other NPCs navigating over the Map. T
 
 ### BONUS: Minimap can be seen:
 See, if you can find and utilize some free assets/scripts. The Minimap should show the environment and move with the player's position.
+
+### BONUS: Split Screen
+Make the Game SplitScreen with two controllable players
